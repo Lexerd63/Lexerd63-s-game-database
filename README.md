@@ -1,6 +1,23 @@
-Lexerd63's-game-database
-
-Go on the google drive link and download the file
+Lexerd63's game database
 
 
-extract the zip and then run index.html through chrome or google, now you have an infinite game site that can't be blocked
+This is a modern game site that uses about:blank cloning, all html based no hyperlink game (unblockable games), and more cool things being added.
+
+
+
+Thanks to @tylerpalkio for the base Tyler-Palkio's-Gamehub
+
+
+
+
+Deploying with netlify is an option
+
+
+
+
+If there are any glitches or things wanted to be added, please email drexelking@icloud.com. Thank you.
+
+
+
+
+More games being added soon!

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="The Best website for unblocked games!">
+  <meta name="keywords" content="Games,Unblocked Games,Unity,WebGL,Unblocked,Google Sites,Lexerd63's game hub,Lexerd63's unblocked games,Lexerd63's games unblocked">
+  <meta name="author" content="Lexerd63">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lexerd63's Game Database</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #1e1e1e;
+      color: #fff;
+    }
+
+    .heading {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .heading h1 {
+      margin: 0;
+      color: #00ffae;
+    }
+
+    #searchBar {
+      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      width: 90%;
+      max-width: 400px;
+      background-color: #303134;
+      color: #ffffff;
+      font-size: 1rem;
+    }
+
+    #blankBtn {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background-color: #2c2c2c;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    #blankBtn:hover {
+      background: #00ffae;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    #gameList {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    #gameList a {
+      display: block;
+      background: #2c2c2c;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    #gameList a:hover {
+      background: #00ffae;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c2c2c;
+    }
+
+    footer a {
+      color: #00ffae;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="heading">
+    <h1>Lexerd63 Game Database</h1>
+  </div>
+
+  <input type="text" id="searchBar" placeholder="Search games..." onkeyup="filterGames()">
+  <button id="blankBtn" onclick="openBlankPage()">Open In Blank</button>
+
+  <div id="gameList">
+    <a href="1">1</a>
+    <a href="1v1.lol">1v1.LOL</a>
+    <a href="10minutestilldawn">10 Minutes Till Dawn</a>
+    <a href="2048">2048</a>
+    <a href="adanceoffireandice">A Dance of Fire And Ice</a>
+    <a href="adarkroom">A Dark Room</a>
+    <a href="adrenalinechallenge">Adrenaline Challenge</a>
+    <a href="adventuredrivers">Adventure Drivers</a>
+    <a href="asteroids">Asteroids</a>
+    <a href="astray">Astray</a>
+    <a href="backcountry">Backcountry</a>
+    <a href="badicecream">Bad Ice Cream</a>
+    <a href="badicecream2">Bad Ice Cream 2</a>
+    <a href="basketrandom">Basket Random</a>
+    <a href="bitlife">BitLife</a>
+    <a href="bounceback">Bounceback</a>
+    <a href="boxingrandom">Boxing Random</a>
+    <a href="breaklock">BreakLock</a>
+    <a href="breakout">Breakout</a>
+    <a href="chess">Chess</a>
+    <a href="chromedino">Chrome Dino</a>
+    <a href="connect3">Connect 3</a>
+    <a href="cookieclicker">Cookie Clicker</a>
+    <a href="crazycattle3d">CrazyCattle3D</a>
+    <a href="cubefield">Cubefield</a>
+    <a href="doodlejump">Doodle Jump</a>
+    <a href="ducklife">Duck Life</a>
+    <a href="ducklife2">Duck Life 2</a>
+    <a href="ducklife3">Duck Life 3</a>
+    <a href="ducklife4">Duck Life 4</a>
+    <a href="edgesurf">Edge Surf</a>
+    <a href="evilglitch">Evil Glitch</a>
+    <a href="factoryballsforever">Factory Balls Forever</a>
+    <a href="fireboyandwatergirlintheforesttemple">Fireboy and Watergirl in the Forest Temple</a>
+    <a href="flappybird">Flappy Bird</a>
+    <a href="friendlyfire">Friendly Fire</a>
+    <a href="geometrydash">Geometry Dash</a>
+    <a href="gopherkart">Gopher Kart</a>
+    <a href="hextris">Hextris</a>
+    <a href="iceagebabyadventure">Ice Age Baby Adventure</a>
+    <a href="jumpingfrogspuzzle">Jumping Frogs Puzzle</a>
+    <a href="konnekt">Konnekt</a>
+    <a href="motox3m2">Moto X3M 2</a>
+    <a href="pacman">Pac-Man</a>
+    <a href="pushback">Pushback</a>
+    <a href="racer">Racer</a>
+    <a href="radiusraid">Radius Raid</a>
+    <a href="retrobowl">Retro Bowl</a>
+    <a href="retrohaunt">Retrohaunt</a>
+    <a href="riddleschool">Riddle School</a>
+    <a href="riddleschool2">Riddle School 2</a>
+    <a href="riddleschool3">Riddle School 3</a>
+    <a href="riddleschool4">Riddle School 4</a>
+    <a href="riddleschool5">Riddle School 5</a>
+    <a href="roadblocks">Roadblocks</a>
+    <a href="sleepingbeauty">Sleeping Beauty</a>
+    <a href="slope">Slope</a>
+    <a href="snake">Snake</a>
+    <a href="snowrider3d">Snow Rider 3D</a>
+    <a href="soccerrandom">Soccer Random</a>
+    <a href="spacecompany">Space Company</a>
+    <a href="spaceinvaders">Space Invaders</a>
+    <a href="tetris">Tetris</a>
+    <a href="thechromaincident">The Chroma Incident</a>
+    <a href="thereisnogame">THERE IS NO GAME!</a>
+    <a href="towermaster">Tower Master</a>
+    <a href="tunnelrush">Tunnel Rush</a>
+    <a href="underrun">Under Run</a>
+    <a href="vex3">Vex 3</a>
+    <a href="vex4">Vex 4</a>
+    <a href="vex5">Vex 5</a>
+    <a href="vex6">Vex 6</a>
+    <a href="vex7">Vex 7</a>
+    <a href="volleyrandom">Volley Random</a>
+    <a href="webretro">Webretro (retro console emulator)</a>
+    <a href="worldshardestgame">World's Hardest Game</a>
+    <a href="worldshardestgame2">World's Hardest Game 2</a>
+    <a href="xx142b2.exe">xx142-b2.exe</a>
+    <a href="cluster-rush">Cluster Rush</a>
+    <a href="basketball-legends-2020">Basketball Legends 2020</a>
+    <a href="DogeMiner">DogeMiner</a>
+    <a href="FullScreenMario">Full Screen Mario</a>
+    <a href="wordle">Wordle</a>
+    <a href="Stickman-Survival">Stickman Survival</a>
+    <a href="Proxy">Proxy (Click Helios.html)</a>
+    <a href="Minecraft">Minecraft</a>
+    <a href="drive-mad">Drive Mad</a>
+    <a href="AngryBirds-main">Angry Birds</a>
+    <a href="bacon-may-die">Bacon May Die</a>
+    <a href="Supermario64">Super Mario 64</a>
+    <a href="cuttherope">Cut The Rope</a>
+    <a href="OvO-1.4">OvO 1.4</a>
+    <a href="watchparty-master">Working Proxy</a>
+    <a href="sausage-flip.github.io-main">Sausage flip game site</a>
+  </div>
+
+  <p style="text-align:center">(Games actively being added!)</p>
+
+  <footer>
+    <a href="https://github.com/Lexerd63">Source Code</a>
+    <a href="bitcoin:bc1q5072l0wec75kvatudg3qh8zxk40dmem0d0zu0kzszemxc87qqv9s9z608y">Donate BTC</a>
+  </footer>
+
+  <script>
+    function filterGames() {
+      const input = document.getElementById('searchBar').value.toLowerCase();
+      const links = document.querySelectorAll('#gameList a');
+      links.forEach(link => {
+        const text = link.textContent.toLowerCase();
+        link.style.display = text.includes(input) ? '' : 'none';
+      });
+    }
+
+    let blankWin = null; // keep reference to blank window
+
+    function openBlankPage() {
+      if (!blankWin || blankWin.closed) {
+        blankWin = window.open("about:blank", "_blank");
+        // copy page HTML but remove the button inside clone
+        let cloned = document.documentElement.outerHTML.replace(
+          /<button id="blankBtn".*?<\/button>/s,
+          ""
+        );
+        blankWin.document.write(cloned);
+        blankWin.document.close();
+      } else {
+        blankWin.focus();
+      }
+    }
+  </script>
+</body>
+</html>
